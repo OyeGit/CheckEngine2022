@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu"
+    tools:context="com.velexsoft.checkengine.FreezeFrameActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_margin="16dp"
+        android:layout_height="42dp"
+        android:layout_width="42dp"
+        android:layout_gravity="left"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/spinner1Layout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:visibility="invisible"
+            android:background="@drawable/outlinedark"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frame Number ($) : "
+                android:textColor="#282727"
+                android:id="@+id/textTitle"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="left"
+                android:layout_margin="8dp" />
+
+            <View   android:id="@+id/thirdDivider"
+                android:layout_height="match_parent"
+                android:layout_width="0.1dp"
+                android:background="#a9a8a8" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_main_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#6e6e6e"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

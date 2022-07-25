@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="36dp"
+        android:paddingLeft="@dimen/activity_left_margin"
+        android:paddingRight="@dimen/activity_left_margin"
+        android:background="@drawable/mainmenu"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:text="Check Engine"
+                android:textColor="#404040"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:id="@+id/title1"
+                />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffba050a"
+                android:layout_marginBottom="@dimen/title_bottom_margin"
+                android:text="@string/phone_title_text"
+                />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:text="@string/signed_out" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_marginBottom="12dp"
+                style="@style/ThemeOverlay.MyTextDetail"
+                tools:text="Check Engine User ID: 123456789abc" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/phone_auth_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dashboardmenu"
+            android:padding="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2.0">
+
+                <EditText
+                    android:id="@+id/field_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_phone_number"
+                    android:layout_weight="1.0"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:id="@+id/field_verification_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_verification_code"
+                    android:layout_weight="1.0"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:background="@drawable/dashboardmenu"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/button_start_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_gray_ripple_effects"
+                    android:text="@string/start_phone_auth"/>
+
+                <Button
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_gray_ripple_effects"
+                    android:id="@+id/button_verify_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify_phone_auth"/>
+
+                <Button
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_gray_ripple_effects"
+                    android:id="@+id/button_resend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resend_phone_auth"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signed_in_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            android:background="@drawable/dashboardmenu"
+            >
+
+            <Button
+                android:id="@+id/goToCheckEngine"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Engine"
+                android:background="@drawable/button_gray_ripple_effects" />
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out"
+                android:background="@drawable/button_gray_ripple_effects" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

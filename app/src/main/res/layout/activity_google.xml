@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="3dp"
+    android:orientation="vertical"
+
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="36dp"
+            android:paddingLeft="@dimen/activity_left_margin"
+            android:paddingRight="@dimen/activity_left_margin"
+            android:background="@drawable/mainmenu"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:text="Check Engine"
+                android:textColor="#404040"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:id="@+id/title1"
+                />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/title_bottom_margin"
+                android:text="@string/google_title_text"
+                android:textColor="#ffba050a"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+              />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/ThemeOverlay.MyTextDetail"
+                android:text="@string/signed_out" />
+
+            <TextView
+                android:id="@+id/detail"
+                style="@style/ThemeOverlay.MyTextDetail"
+                tools:text="Firebase User ID: 123456789abc" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/dashboardmenu">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                tools:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/sign_out_and_disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <Button
+                    android:id="@+id/goConnectionScreen"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_gray_ripple_effects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed to Check Engine"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/disconnect_button"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_gray_ripple_effects"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="Disconnect" />
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:visibility="invisible"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_gray_ripple_effects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

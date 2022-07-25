@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="3dp"
+    android:background="#000000"
+    tools:context="com.velexsoft.velexdiagnosticsystem.MainMenuScreen">
+    <item android:id="@+id/action_settings" android:title="Settings"
+        android:orderInCategory="75" app:showAsAction="never" />
+    <item android:id="@+id/actionReport" android:title="Apply Settings"
+        android:checkable="true"
+        android:checked="true"
+        android:visible="false"
+        android:orderInCategory="5" app:showAsAction="never" />
+    <item android:id="@+id/check_engine_blog" android:title="Wiki"
+        android:visible="false"
+        android:orderInCategory="28" app:showAsAction="never" />
+    <item android:id="@+id/action_exit" android:title="Disconnect Device"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/sendMail"
+        android:title="Show Unsupported"
+        android:orderInCategory="101"
+        android:visible="false"
+        android:icon="@drawable/email"
+        app:showAsAction="always|collapseActionView" />
+</menu>
+

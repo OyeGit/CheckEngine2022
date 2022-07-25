@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "881473639721",
+    "firebase_url": "https://checkenginenig.firebaseio.com",
+    "project_id": "checkenginenig",
+    "storage_bucket": "checkenginenig.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881473639721:android:157e871810dec6b6",
+        "android_client_info": {
+          "package_name": "com.velexsoft.checkengine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881473639721-7lltn1toil5eq9vt10l7a6sdllk69kcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.velexsoft.checkengine",
+            "certificate_hash": "e5f3b4af63757f24d03cf7cd2756efc082ab8bf4"
+          }
+        },
+        {
+          "client_id": "881473639721-odn32emc58krbri8umd3mgvtqdiqesud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXaott7F4070AEukVJQVAa8pKS5JeyV4Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881473639721-odn32emc58krbri8umd3mgvtqdiqesud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

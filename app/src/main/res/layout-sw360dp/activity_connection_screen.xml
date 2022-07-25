@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    android:background="#000000"
+    android:padding="2dp"
+    tools:context="com.velexsoft.checkengine.ConnectionScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:background="@drawable/connscreennew"
+        android:paddingLeft="@dimen/activity_left_margin"
+        android:paddingRight="@dimen/activity_left_margin"
+        android:paddingTop="0dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_marginLeft="8dp"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_gravity="left"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Check Engine"
+            android:textColor="#404040"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:onClick="checkEngineMAC"
+            android:gravity="center_horizontal"
+            android:id="@+id/title1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffba050a"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/title2"
+            />
+
+         <View
+            android:layout_height="204dp"
+            android:layout_width="220dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:padding="48dp"
+            android:id="@+id/image1"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_left_margin"
+            android:paddingRight="@dimen/activity_left_margin"
+            android:background="@drawable/dashboardmenu"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/connectButton1Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/buttonConnect"
+                android:onClick="ConnButton"
+                android:background="@drawable/button_gray_ripple_effects"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/connectButton2Text"
+                android:onClick="goCheckCom"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:background="@drawable/button_gray_ripple_effects"
+                android:id="@+id/buttonSite"
+                android:textColor="#000000"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:paddingTop="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/checkboxoffline"
+                android:visibility="invisible"
+                android:onClick="checkCheckBox"
+                android:textColor="#ff292929"
+                android:id="@+id/offline"
+                android:layout_height="24dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

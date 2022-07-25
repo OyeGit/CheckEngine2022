@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.velexsoft.velexvehiclediagnostics.ScanVehicle">
+    <item android:id="@+id/freezeFrame" android:title="@string/freeze_frame"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_clearTroubCode" android:title="@string/clear_dtc"
+        android:orderInCategory="103" app:showAsAction="never" />
+    <item android:id="@+id/vehicle_info" android:title="@string/veh_param"
+        android:orderInCategory="102" app:showAsAction="never" />
+    <item android:id="@+id/run_pdf"
+        android:title="Show Unsupported"
+        android:orderInCategory="105"
+        android:icon="@drawable/pdficonsmall"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

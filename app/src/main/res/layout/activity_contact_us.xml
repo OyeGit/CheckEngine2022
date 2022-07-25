@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu"
+    android:orientation="vertical"
+    tools:context="com.velexsoft.checkengine.ContactUsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/dashboardmenu"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sendtolabel"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="left"
+            android:text="Send To :"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#636363"
+            android:layout_centerInParent="true"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendtoEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:text="support@checkengine.com"
+            android:textColor="#151515"
+            android:layout_centerInParent="true"/>
+
+        <View   android:id="@+id/title12Divider"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:background="#585858" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="E-mail Type "
+            android:paddingLeft="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#636363"
+            android:id="@+id/textView6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="4dp"
+            android:background="@drawable/outlinedark"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:color="#ffba050a"
+                android:id="@+id/spinner" />
+
+        </LinearLayout>
+
+        <View   android:id="@+id/title13Divider"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:background="#585858" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffba050a"
+            android:paddingLeft="8dp"
+            android:enabled="true"
+            android:checked="true"
+            android:text="Attach Log Files"
+            android:id="@+id/checkBoxAttFile" />
+
+        <View   android:id="@+id/title14Divider"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:background="#585858" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/button_selector"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:onClick="saveSend"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/button3" />
+
+    </LinearLayout>
+
+</LinearLayout>

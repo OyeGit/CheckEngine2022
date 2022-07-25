@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines. -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="allow_speed_range"
+        android:summary="@string/name_enable_debugging_summary"
+        android:title="@string/name_enable_debugging_title" />
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="allow_speed_range"
+        android:summary="Restriction the number of trip information to display on the diagnostic reports to 2"
+        android:title="Maximum 2 Trips on Report" />
+
+    <EditTextPreference
+        android:defaultValue="20"
+        android:inputType="number"
+        android:key="minimum_trip_speed"
+        android:maxLines="1"
+        android:text="Minimum speed for a drive cycle trip"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Minimum speed (Km/hr)" />
+
+    <EditTextPreference
+        android:defaultValue="60"
+        android:inputType="number"
+        android:key="maximum_trip_speed"
+        android:maxLines="1"
+        android:text="Maximum speed for a drive cycle trip"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Maximum speed (Km/hr)" />
+
+</PreferenceScreen>

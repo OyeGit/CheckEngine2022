@@ -1,0 +1,135 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainbackgrd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp"
+    android:background="@drawable/dashboardmenu"
+    android:layout_gravity="top"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:color="#ff3fc8d5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff3b3b3b"
+        android:layout_span="1"
+        />
+
+    <View   android:id="@+id/basic1Divider"
+        android:layout_height="0.1dp"
+        android:padding= "20dp"
+        android:layout_width="match_parent"
+        android:background="#666666" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:weightSum="8">
+
+        <TextView
+            android:text=""
+            android:id="@+id/textlabel1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff3b3b3b"
+            />
+
+        <TextView
+            android:id="@+id/textValue1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/outlinedark"
+            android:gravity="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffba050a"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:weightSum="8">
+
+        <TextView
+            android:text=""
+            android:id="@+id/textlabel2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_weight="1"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff3b3b3b"
+           />
+
+        <TextView
+            android:id="@+id/textValue2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/outlinedark"
+            android:gravity="end"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffba050a"
+            />
+
+    </LinearLayout>
+
+    <View   android:id="@+id/basic1Divider3"
+        android:layout_height="0.1dp"
+        android:padding= "20dp"
+        android:layout_width="match_parent"
+        android:background="#666666" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:weightSum="8">
+
+        <TextView
+            android:text=""
+            android:id="@+id/textlabel5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_weight="4"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff3b3b3b"
+            />
+
+        <TextView
+            android:id="@+id/textValue6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/outlinedark"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffba050a"
+            />
+
+    </LinearLayout>r
+
+
+
+</TableLayout>

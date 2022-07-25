@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainbackgrd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/listitem_ripple_effects"
+    android:paddingTop="2dp"
+    android:longClickable="true"
+    android:paddingBottom="2dp"
+    android:layout_gravity="top"
+    >
+
+    <LinearLayout
+
+        android:id="@+id/mainbackgrdimg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp">
+
+        <ImageView
+            android:layout_height="16dp"
+            android:color="#ff3fc8d5"
+            android:layout_width="16dp"
+            android:layout_gravity="start|center_vertical"
+            android:scaleType="centerCrop"
+            android:padding="4dp"
+            android:id="@+id/image"
+            />
+
+        <TextView
+            android:id="@+id/text"
+            android:paddingLeft="16dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="start|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:padding="0dp"
+            android:textStyle="bold"
+            android:textColor="#737272"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text=""
+        android:id="@+id/textwide"
+        android:color="#ff3fc8d5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:gravity="start"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:paddingRight="24dp"
+        android:ellipsize="end"
+        android:layout_gravity="start|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#5b5b5b"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <header
+        android:layout_marginTop="48dp"
+        android:paddingTop="48dp"
+        android:fragment="com.velexsoft.checkengine.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_shortcut_settings"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:layout_marginTop="4dp"
+        android:fragment="com.velexsoft.checkengine.SettingsActivity$CommunicationPreferenceFragment"
+        android:icon="@drawable/ic_shortcut_bluetooth_connected"
+        android:title="@string/pref_connection_setting" />
+
+    <header
+        android:layout_marginTop="4dp"
+        android:fragment="com.velexsoft.checkengine.SettingsActivity$ReportsPreferenceFragment"
+        android:icon="@drawable/ic_shortcut_ballot"
+        android:title="@string/pref_header_reports" />
+
+    <header
+        android:layout_marginTop="4dp"
+        android:fragment="com.velexsoft.checkengine.SettingsActivity$DriveCyclePreferenceFragment"
+        android:icon="@drawable/ic_shortcut_drive_eta"
+        android:title="Drive Cycle" />
+
+</preference-headers>

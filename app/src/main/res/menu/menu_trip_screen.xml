@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.velexsoft.checkengine.MonitorsScreen">
+    <item android:id="@+id/trip_manual" android:title="Drive Cycle Manual"
+        android:orderInCategory="1" app:showAsAction="never" />
+    <item android:id="@+id/clear_enginelight" android:title="Clear Check Engine Light"
+        android:orderInCategory="1" app:showAsAction="never" />
+    <item android:id="@+id/run_pdf"
+        android:title="Show Unsupported"
+        android:orderInCategory="105"
+        android:icon="@drawable/pdficonsmall"
+        app:showAsAction="always|collapseActionView" />
+
+
+
+
+</menu>

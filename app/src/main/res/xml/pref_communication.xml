@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="Bluetooth"
+        android:entries="@array/conn_type_preference_entry_titles"
+        android:entryValues="@array/conn_type_preference_entry_values"
+        android:key="connection_type"
+        android:enabled="false"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/connection_type" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="vibrate_on_connection"
+        android:summary="@string/pref_playsound_on_connect_summary"
+        android:title="@string/pref_playsound_on_connect" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="allow_voice_notification"
+        android:summary="@string/voice_notify_summary"
+        android:title="@string/voice_notify_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="show_tips_messages"
+        android:summary="@string/show_tips_summary"
+        android:title="@string/show_tips_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="vibrate_on_connection"
+        android:enabled="false"
+        android:summary="Automatically detect and set communication protocol and baud rate"
+        android:title="Auto Communication parameters" />
+
+</PreferenceScreen>

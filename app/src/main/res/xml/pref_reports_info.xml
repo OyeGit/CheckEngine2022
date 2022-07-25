@@ -1,0 +1,77 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="display_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="name_on_report"
+        android:summary="@string/name_on_report_summary"
+        android:title="@string/name_on_report_title" />
+
+    <EditTextPreference
+        android:defaultValue="@string/fueltankmin"
+        android:inputType="number"
+        android:key="fuel_tank_min"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:hint="Minimum % of fuel tank volume level for alerts to be raised"
+        android:singleLine="true"
+        android:title="Fuel Tank Level Alert (%)" />
+
+    <EditTextPreference
+        android:defaultValue="120"
+        android:inputType="number"
+        android:key="coolant_temp_max"
+        android:maxLines="1"
+        android:text="Maximum coolant temperature level for alerts to be raised"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Coolant Temperature Level (C)" />
+
+    <EditTextPreference
+        android:defaultValue="128"
+        android:inputType="number"
+        android:key="engine_oil_temp_max"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Engine Oil Temp Level (C)" />
+
+    <EditTextPreference
+        android:defaultValue="8.5"
+        android:inputType="numberDecimal"
+        android:key="input_battery"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Battery Input Level (V)" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="enable_monitor_media"
+        android:summary="@string/pref_include_monitors_summary"
+        android:title="@string/pref_include_monitors_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="include_freeze_frame"
+        android:summary="@string/pref_include_freeze_summary"
+        android:title="@string/pref_include_freeze_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="include_comp_tests"
+        android:summary="@string/pref_include_test_summary"
+        android:title="@string/pref_include_test_title" />
+
+
+
+</PreferenceScreen>

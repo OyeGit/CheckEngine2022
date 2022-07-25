@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainbackgrd"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:background="@drawable/listitem_ripple_effects"
+    android:layout_gravity="top"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="2dp"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ff3b3b3b"
+               />
+
+        <TextView
+            android:text=""
+            android:id="@+id/resultValue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_gravity="right|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#848383"
+            android:nestedScrollingEnabled="true" />
+
+     </LinearLayout>
+
+
+
+
+
+</LinearLayout>

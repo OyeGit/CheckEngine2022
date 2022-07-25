@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.velexsoft.checkengine">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/app_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBXaott7F4070AEukVJQVAa8pKS5JeyV4Y"/>
+
+        <activity
+            android:name=".MainLaunchActivity"
+
+            android:configChanges="orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Launcher"
+            android:screenOrientation="portrait"
+            android:visibleToInstantApps="false"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".servicess.BluetoothService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ConnectionScreen"
+            android:excludeFromRecents="false"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ContactUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistrationScreen"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".WebViewEx" />
+        <activity android:name=".MisFireWebViewEx" />
+        <activity android:name=".WebViewBlogEx" />
+        <activity android:name=".WebViewExGoogle" />
+        <activity android:name=".MonitorsScreen" />
+        <activity android:name=".DashboardScreen" />
+        <activity android:name=".CompResults"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".FreezeFrameActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MonResultsMonitorDesc" />
+        <activity android:name=".DriveCycleTripScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DiagnosticScan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChooserActivity"
+            android:excludeFromRecents="true"/>
+        <activity android:name=".GoogleSignInActivity"
+            android:excludeFromRecents="true"/>
+
+        <activity android:name=".DiagnosticScanDescription" />
+        <activity android:name=".EmailPasswordActivity"
+            android:excludeFromRecents="true"/>
+        <activity android:name=".PhoneAuthActivity"
+            android:excludeFromRecents="true"
+            android:label="Phone Number Authentication"/>
+        <activity android:name=".AnonymousAuthActivity"
+            android:excludeFromRecents="true"/>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".VehicleParameters"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MonitorManual" />
+        <activity
+            android:name=".TripManual"
+            android:label="@string/title_activity_trip_manual"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

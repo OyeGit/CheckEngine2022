@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="3dp"
+    tools:context="com.velexsoft.checkengine.DashboardScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:background="#e7e7e7"
+        android:orientation="horizontal"
+        android:weightSum="6.5"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.velexsoft.checkengine.speedviewlib.AwesomeSpeedometerSmall
+                    android:id="@+id/awesomeSpeedometer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    app:sv_indicatorColor="#b41d1d"
+                    app:sv_indicatorWidth="0dp"
+                    app:sv_speedometerColor="#b7b7b7"
+                    app:sv_speedometerWidth="24dp"
+                    app:sv_textColor="#fd4949"
+                    app:sv_trianglesColor="#202020" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="50dp"
+                    android:text="MAF"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+                <com.velexsoft.checkengine.speedviewlib.RaySpeedometer
+                    android:id="@+id/raySpeedometer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    app:sv_backgroundCircleColor="@color/transparent"
+                    app:sv_highSpeedColor="#f1bab2"
+                    app:sv_indicatorColor="#ffffff"
+                    app:sv_lowSpeedColor="#e6ffd0"
+                    app:sv_lowSpeedPercent="25"
+                    app:sv_mediumSpeedColor="#fafad7"
+                    app:sv_mediumSpeedPercent="40"
+                    app:sv_speedBackgroundColor="@color/transparent"
+                    app:sv_speedometerWidth="12dp" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.velexsoft.checkengine.speedviewlib.AwesomeSpeedometerSmall
+                    android:id="@+id/awesomeSpeedometer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    app:sv_indicatorColor="#b41d1d"
+                    app:sv_indicatorWidth="0dp"
+                    app:sv_speedometerColor="#b7b7b7"
+                    app:sv_speedometerWidth="24dp"
+                    app:sv_textColor="#fd4949"
+                    app:sv_trianglesColor="#202020" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="50dp"
+                    android:text="RPM"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <com.velexsoft.checkengine.speedviewlib.RaySpeedometer
+                    android:id="@+id/raySpeedometer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    app:sv_backgroundCircleColor="@color/transparent"
+                    app:sv_highSpeedColor="#f1bab2"
+                    app:sv_indicatorColor="@color/ap_white"
+                    app:sv_lowSpeedColor="#e6ffd0"
+                    app:sv_speedometerWidth="12dp"
+                    app:sv_lowSpeedPercent="20"
+                    app:sv_mediumSpeedColor="#fafad7"
+                    app:sv_mediumSpeedPercent="50"
+                    app:sv_speedBackgroundColor="@color/transparent"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.velexsoft.checkengine.speedviewlib.AwesomeSpeedometer
+                android:id="@+id/awesomeSpeedometer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:sv_indicatorColor="#b41d1d"
+                app:sv_indicatorWidth="24dp"
+                app:sv_speedometerColor="#b7b7b7"
+                app:sv_textColor="#fd4949"
+                app:sv_trianglesColor="#b41d1d" />
+
+            <com.velexsoft.checkengine.speedviewlib.SpeedView
+                android:id="@+id/speedView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="28dp"
+                app:sv_highSpeedColor="#f1bab2"
+                app:sv_indicatorColor="#a4a4a4"
+
+                app:sv_indicatorWidth="4dp"
+                app:sv_speedometerWidth="14dp"
+                app:sv_speedTextPadding="40dp"
+                app:sv_tickPadding="16dp"
+                app:sv_unitTextSize="24dp"
+                app:sv_speedTextSize="28dp"
+                app:sv_textSize="14dp"
+
+                app:sv_lowSpeedColor="#e6ffd0"
+                app:sv_lowSpeedPercent="35"
+                app:sv_mediumSpeedColor="#fafad7"
+                app:sv_mediumSpeedPercent="55"
+                app:sv_tickNumber="10"
+                app:sv_unitUnderSpeedText="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:paddingBottom="140dp"
+                android:text="Speed"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.velexsoft.checkengine.speedviewlib.AwesomeSpeedometerSmall
+                    android:id="@+id/awesomeSpeedometer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    app:sv_indicatorColor="#b41d1d"
+                    app:sv_indicatorWidth="16dp"
+                    app:sv_speedometerColor="#b7b7b7"
+                    app:sv_speedometerWidth="24dp"
+                    app:sv_textColor="#fd4949"
+                    app:sv_trianglesColor="#202020" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingBottom="42dp"
+                    android:text="Fuel Tank"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:src="@drawable/gastankok" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.velexsoft.checkengine.speedviewlib.AwesomeSpeedometerSmall
+                    android:id="@+id/awesomeSpeedometer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    app:sv_indicatorColor="#b41d1d"
+                    app:sv_indicatorWidth="16dp"
+                    app:sv_speedometerColor="#b7b7b7"
+                    app:sv_speedometerWidth="24dp"
+                    app:sv_textColor="#fd4949"
+                    app:sv_trianglesColor="#202020" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingBottom="42dp"
+                    android:text="Cool Temp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:src="@drawable/engoiltempok" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

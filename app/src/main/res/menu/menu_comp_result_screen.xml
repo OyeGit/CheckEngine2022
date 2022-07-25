@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.velexsoft.velexdiagnosticsystem.MainMenuScreen">
+    <item android:id="@+id/setResults"
+        android:title="Show Unsupported"
+        android:orderInCategory="101"
+        android:icon="@drawable/goodd1"
+        android:visible="false"
+        app:showAsAction="always|collapseActionView" />
+    <item android:id="@+id/run_pdf"
+        android:title="Show Unsupported"
+        android:orderInCategory="101"
+        android:visible="false"
+        android:icon="@drawable/pdficonsmall"
+        app:showAsAction="always|collapseActionView" />
+</menu>

@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
+
+    </style>
+
+    <style name="Theme.Translucy" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Light">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#ba050a</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:textColor">#ba050a</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">100dp</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
+    </style>
+
+
+    <style name="dialog_animation_fade">
+        <item name="android:windowEnterAnimation">@anim/fade_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog</item>
+    </style>
+
+    <style name="dialog_animation_fade_vehinfo">
+        <item name="android:windowEnterAnimation">@anim/fade_in_dialog_v</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog_v</item>
+    </style>
+
+
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">#ffba050a</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+        <item name="android:height">600dp</item>
+
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_in_left</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="OverflowButton" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/menuicon</item>
+    </style>
+
+    <!-- OverFlow menu Styles -->
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">#fde1e1e1</item>
+        <item name="android:windowEnterAnimation">@android:anim/fade_out</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAnimationStyle">@android:anim/fade_in</item>
+
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:textColor">#fdc9c9c9</item>
+        <item name="android:animationResolution">50</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/grey_500</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Light EditTexts -->
+    <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+    <item name="android:windowBackground">@drawable/launch_screen</item>
+    <!-- Optional, on Android 5+ you can modify the colorPrimaryDark color to match the windowBackground color for further branding-->
+    <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
+    </style>
+
+</resources>

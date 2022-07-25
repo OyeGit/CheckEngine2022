@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:defaultValue="Metric"
+        android:entries="@array/unit_measure_entry_titles"
+        android:entryValues="@array/unit_measure_entry_values"
+        android:key="unit_measure"
+        android:negativeButtonText="@null"
+        android:enabled="false"
+        android:positiveButtonText="@null"
+        android:title="@string/unit_measure" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="confirm_exit"
+        android:summary="@string/name_confirm_exit_summary"
+        android:title="@string/name_confirm_exit_title" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="enable_logging"
+        android:summary="@string/name_enable_debugging_summary"
+        android:title="@string/name_enable_debugging_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="enable_file_logging"
+        android:summary="@string/name_enable_file_summary"
+        android:title="@string/name_enable_file_title" />
+
+    <ListPreference
+        android:defaultValue="No"
+        android:entries="@array/clear_cache_yes_titles"
+        android:entryValues="@array/clear_cache_yes_values"
+        android:key="clear_cache"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="Do you want to clear cache?" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="allow_offline_mode"
+        android:summary="@string/name_offline_mode_summary"
+        android:title="@string/name_offline_mode_title" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="allow_support_email"
+        android:summary="@string/name_support_email_summary"
+        android:title="@string/name_support_email_title" />
+
+</PreferenceScreen>

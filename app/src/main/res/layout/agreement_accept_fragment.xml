@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dashboardmenu"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="@drawable/outlinedarker"
+            android:visibility="visible"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Terms and Conditions"
+                android:textColor="#353535"
+                android:id="@+id/instruction"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/outlinedark"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMonInfo"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:text=""
+                        android:textColor="@android:color/background_dark"
+                        android:layout_centerInParent="true"/>
+
+                    <View   android:id="@+id/title14Divider"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:layout_width="wrap_content"
+                        android:background="#585858" />
+
+                    <Button
+                        android:id="@+id/activate"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="end"
+                        android:text="I Accept"
+                        android:textStyle="bold"
+                        android:background="@drawable/button_gray_ripple_effects"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:onClick="onbuttonClicked"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
